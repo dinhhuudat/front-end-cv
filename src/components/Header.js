@@ -16,7 +16,7 @@ const Img = styled('img')({
 
 function Header(props) {
     return (
-    <Paper sx={{p:4, height: '100%', margin: 'auto'  ,backgroundColor:'rgba(0,0,0,0.5)'    ,color: 'white' }}>
+    <Paper sx={{p:4, height: '100%', margin: 'auto'  ,backgroundColor:'rgba(0,0,0,0.8)'    ,color: 'white' }}>
 
       <Grid container 
             spacing={2}  
@@ -38,7 +38,7 @@ function Header(props) {
           <Grid item xs container direction="column" spacing={2}>
 
             <Grid item xs>
-              <Typography gutterBottom variant="h3" component="div">
+              <Typography gutterBottom variant="h4" component="div">
                DINH HUU DAT
               </Typography>
               <Typography   gutterBottom>

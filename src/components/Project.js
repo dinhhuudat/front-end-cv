@@ -25,9 +25,10 @@ function Project(props) {
                     <CardActionArea onClick={()=>handelLink(data.linkProject)}>
                     <CardMedia
                         component="img"
-                        height="140"
+                        height="140" 
                         image={data.image}
                         alt={data.projectName}
+                        sx={{objectFit:'contain' }}
                     />
                     </CardActionArea>
                     <CardContent>
@@ -47,7 +48,7 @@ function Project(props) {
                                     <li >
                                         <Typography align='left' sx={{mt:1}}   gutterBottom   variant='text'
                                         >
-                                        {`${tech.caption}: ${tech.name}`}
+                                        {tech.caption != 'Link:' ? `${tech.caption}: ${tech.name}` : <a href={tech.name} target='_blank' >GO TO SEE!</a>}
                                         </Typography>
                                     </li>
                                 ))}

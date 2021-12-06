@@ -13,8 +13,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SchoolIcon from "@mui/icons-material/School";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-function Body(props) {
-  console.log("Mydata", persionalData);
+function Body(props) { 
 
   const getExp = persionalData.experianceJobs.map((exp) => (
     <>
@@ -215,10 +214,7 @@ function Body(props) {
           }}
         >
           <CircularProgress
-            sx={{
-              backgroundColor: "#eec0c6",
-              backgroundImage:
-                "linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)",
+            sx={{ 
               width: "100%",
               margin: "auto",
             }}
@@ -257,7 +253,7 @@ function Body(props) {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6}>
+          <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6} id='CONTACT'>
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}
               variant="h4"
@@ -363,7 +359,7 @@ function Body(props) {
           </Paper>
         </Grid>
 
-        <Grid Skills item sm={12} lg={8}>
+        <Grid Skills item sm={12} lg={8} id='SKILLS'>
           <Paper sx={{ my: 5, mx: "auto", p: 2,
                         // backgroundImage:'url(https://www.fourthday.co.uk/wp-content/uploads/2018/09/check-1-18_1100x600_acf_cropped.png)' 
                         }} elevation={6} 
@@ -383,7 +379,7 @@ function Body(props) {
           </Paper>
         </Grid>
 
-        <Grid Education item sm={12} lg={4}>
+        <Grid Education item sm={12} lg={4} id='EDUCATION'>
           <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6}>
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}
@@ -398,7 +394,7 @@ function Body(props) {
           </Paper>
         </Grid>
 
-        <Grid Experiance item sm={12} lg={8}>
+        <Grid Experiance item sm={12} lg={8} id="EXPERIENCE" >
           <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6}>
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}

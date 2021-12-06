@@ -29,7 +29,7 @@ function Header(props) {
         >
        
           <ButtonBase sx={{ width: 128, height: 128 }}>
-            <Img alt="Avatar" src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-1/p200x200/123393039_2214550022011525_7840320266283577514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=SlffwpnwbI4AX_JXozf&_nc_ht=scontent.fsgn2-5.fna&oh=d2d43f3612f678612e4d64ee4a3815c3&oe=617BB9FD" />
+            <Img alt="Avatar" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.6435-1/p320x320/123393039_2214550022011525_7840320266283577514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=hcwC_nUi3JUAX_OMe0e&_nc_ht=scontent.fsgn5-4.fna&oh=0fc63c11441346e12208367e288a69b2&oe=61D40EE7" />
           </ButtonBase>
 
         </Grid>

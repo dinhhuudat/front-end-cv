@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Body from './components/Body';
 import Project from './components/Project';
 import Grid from '@mui/material/Grid';
+import Menu from './components/menuBar';
  
 function App() {
   return (
@@ -11,8 +12,12 @@ function App() {
       <Grid 
           sx={{backgroundColor:'#eec0c6',backgroundImage:'linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)'}}
           container spacing={1} direction='column'
-      >
-          <Grid item xs={12}>
+      > 
+          <Grid item xs={12} position="fixed" sx={{zIndex:1000}}>
+                <Menu />
+          </Grid>
+
+          <Grid item xs={12} sx={{mt:6}}>
                 <Header/>
           </Grid> 
 
@@ -23,8 +28,8 @@ function App() {
           <Grid item sm={0} lg={2}> </Grid>
 
           <Grid item sm={0} lg={2}> </Grid> 
-          <Grid item sm={12} lg={8}>
-            <Project/>  
+          <Grid item sm={12} lg={8} id='PROJECT'>
+            <Project />  
           </Grid> 
           <Grid item sm={0} lg={2}> </Grid>
           

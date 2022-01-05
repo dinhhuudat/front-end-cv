@@ -17,7 +17,7 @@ function App() {
                 <Menu />
           </Grid>
 
-          <Grid item xs={12} sx={{mt:6}}>
+          <Grid item xs={12} sx={{mt:8,mb:5}}>
                 <Header/>
           </Grid> 
 

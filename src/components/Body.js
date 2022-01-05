@@ -12,6 +12,8 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SchoolIcon from "@mui/icons-material/School";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import CakeIcon from '@mui/icons-material/Cake';
+import { Cake } from "@mui/icons-material";
 
 function Body(props) {
   const getExp = persionalData.experianceJobs.map((exp) => (
@@ -343,6 +345,30 @@ function Body(props) {
             >
               CONTACT
             </Typography>
+
+            <Grid
+              sx={{ mt: 2 }}
+              container
+              spacing={1}
+              wrap="nowrap"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Grid item>
+                <Cake />
+              </Grid>
+              <Grid item>
+                <Typography
+                  align="right"
+                  sx={{ fontStyle: "italic" }}
+                  variant="inherit"
+                  gutterBottom
+                >
+                  17/02/1997
+                </Typography>
+              </Grid>
+            </Grid>
+
             <Grid
               sx={{ mt: 2 }}
               container

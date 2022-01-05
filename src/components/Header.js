@@ -42,13 +42,13 @@ function Header(props) {
                DINH HUU DAT
               </Typography>
               <Typography   gutterBottom>
-                Front-end Developer
+                Web Developer
               </Typography> 
             </Grid>
 
             <Grid item> 
               <Typography align='left' sx={{fontStyle:'italic'}} variant='inherit' gutterBottom>
-                Hello, my name is Dat and I want to become a Front-end Developer
+              Hello, my name is Dat and I want to become a web Developer. I always challenge myself to become a better version
               </Typography> 
 
                

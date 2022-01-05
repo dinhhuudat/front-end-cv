@@ -13,8 +13,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SchoolIcon from "@mui/icons-material/School";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-function Body(props) { 
-
+function Body(props) {
   const getExp = persionalData.experianceJobs.map((exp) => (
     <>
       <Grid
@@ -200,47 +199,128 @@ function Body(props) {
     </>
   ));
 
-  const Skills = persionalData.skills.map((skill) => {
-    let randomVal = Math.random() < 0.5 ? 80 : -80;
+  //SKILLS
+  const Skills = () => {
+    const FrontEnd = ["HTML", "CSS", "JAVASCRIPT", "REACTJS", "JQUERY", "SASS"];
+    const BackEnd = ["NODEJS", "EXPRESS"];
+    const DATABASE = ["MONGODB", "ORACLE-SQL", "SQL-SERVER"];
+    const OTHERSKILLS = ["C#(WINFORM)", "DEVEXPRESS"];
+    const BLOCKCHAIN = ["SOLIDITY", "ETHERS", "METAMASK"];
+
+    const BLOCKCHAINData = BLOCKCHAIN.map((val, index) => (
+      <Typography
+        sx={{ mt: 1, ml: 3 ,fontStyle: "italic"}}
+        align="left" 
+        variant="inherit"
+        gutterBottom
+      >
+        {val}
+      </Typography>
+    ));
+    
+    const FrontEndData = FrontEnd.map((val, index) => (
+      <Typography
+        sx={{ mt: 1, ml: 3 ,fontStyle: "italic"}}
+        align="left" 
+        variant="inherit"
+        gutterBottom
+      >
+        {val}
+      </Typography>
+    ));
+
+    const BackEndData = BackEnd.map((val, index) => (
+      <Typography
+      sx={{ mt: 1, ml: 3 ,fontStyle: "italic"}}
+      align="left" 
+      variant="inherit"
+      gutterBottom
+      >
+        {val}
+      </Typography>
+    ));
+
+    const DATABASEData = DATABASE.map((val, index) => (
+      <Typography
+      sx={{ mt: 1, ml: 3 ,fontStyle: "italic"}}
+      align="left" 
+      variant="inherit"
+      gutterBottom
+      >
+        {val}
+      </Typography>
+    ));
+
+    const OTHERSKILLSData = OTHERSKILLS.map((val, index) => (
+      <Typography
+      sx={{ mt: 1, ml: 3 ,fontStyle: "italic"}}
+      align="left" 
+      variant="inherit"
+      gutterBottom
+      >
+        {val}
+      </Typography>
+    ));
+
     return (
-      <Grid item lg={3} sm={4} sx={{ mb: 2, maxWidth: "130px" }}>
-        <Box
-          sx={{
-            mt: 1,
-            position: "relative",
-            display: "inline-flex",
-            width: "100%",
-            margin: "auto",
-          }}
-        >
-          <CircularProgress
-            sx={{ 
-              width: "100%",
-              margin: "auto",
-            }}
-            size={130}
-            thickness={1}
-          />
-          <Box
-            sx={{
-              top: 0,
-              left: 0,
-              bottom: 0,
-              right: 0,
-              position: "absolute",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Typography variant="h6" component="div" color="text.secondary">
-              {skill.language}
-            </Typography>
-          </Box>
-        </Box>
+      <Grid
+        container
+        spacing={2}
+        justifyContent="space-between"
+        alignItems="flex-start"
+      >
+        <Grid item sm={6} lg={4}>
+          <Typography sx={{ mt: 2, ml: 1,textDecoration: "underline", fontWeight: "bold" }}  component="div"  
+            gutterBottom
+            align="left"
+            variant="text">
+            FRONT-END
+          </Typography>
+          {FrontEndData}
+        </Grid>
+
+        <Grid item sm={6} lg={4}>
+        <Typography sx={{ mt: 2, ml: 1,textDecoration: "underline", fontWeight: "bold" }}  component="div"  
+            gutterBottom
+            align="left"
+            variant="text">
+            BACK-END
+          </Typography>
+          {BackEndData}
+        </Grid>
+
+        <Grid item sm={6} lg={4}>
+        <Typography sx={{ mt: 2, ml: 1,textDecoration: "underline", fontWeight: "bold" }}  component="div"  
+            gutterBottom
+            align="left"
+            variant="text">
+            DATABASE
+          </Typography>
+          {DATABASEData}
+        </Grid>
+
+        <Grid item sm={6} lg={4}>
+        <Typography sx={{ mt: 2, ml: 1,textDecoration: "underline", fontWeight: "bold" }}  component="div"  
+            gutterBottom
+            align="left"
+            variant="text">
+            BLOCKCHAIN
+          </Typography>
+          {BLOCKCHAINData}
+        </Grid>
+
+        <Grid item sm={6} lg={4}>
+        <Typography sx={{ mt: 2, ml: 1,textDecoration: "underline", fontWeight: "bold" }}  component="div"  
+            gutterBottom
+            align="left"
+            variant="text">
+            OTHER SKILLS
+          </Typography>
+          {OTHERSKILLSData}
+        </Grid>
       </Grid>
     );
-  });
+  };
 
   return (
     <>
@@ -253,7 +333,7 @@ function Body(props) {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6} id='CONTACT'>
+          <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6} id="CONTACT">
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}
               variant="h4"
@@ -359,11 +439,16 @@ function Body(props) {
           </Paper>
         </Grid>
 
-        <Grid Skills item sm={12} lg={8} id='SKILLS'>
-          <Paper sx={{ my: 5, mx: "auto", p: 2,
-                        // backgroundImage:'url(https://www.fourthday.co.uk/wp-content/uploads/2018/09/check-1-18_1100x600_acf_cropped.png)' 
-                        }} elevation={6} 
-                >
+        <Grid Skills item sm={12} lg={8} id="SKILLS">
+          <Paper
+            sx={{
+              my: 5,
+              mx: "auto",
+              p: 2,
+              // backgroundImage:'url(https://www.fourthday.co.uk/wp-content/uploads/2018/09/check-1-18_1100x600_acf_cropped.png)'
+            }}
+            elevation={6}
+          >
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}
               variant="h4"
@@ -374,12 +459,12 @@ function Body(props) {
               SKILLS
             </Typography>
             <Grid container spacing={1} alignItems="center">
-              {Skills}
+              {Skills()}
             </Grid>
           </Paper>
         </Grid>
 
-        <Grid Education item sm={12} lg={4} id='EDUCATION'>
+        <Grid Education item sm={12} lg={4} id="EDUCATION">
           <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6}>
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}
@@ -394,7 +479,7 @@ function Body(props) {
           </Paper>
         </Grid>
 
-        <Grid Experiance item sm={12} lg={8} id="EXPERIENCE" >
+        <Grid Experiance item sm={12} lg={8} id="EXPERIENCE">
           <Paper sx={{ my: 5, mx: "auto", p: 2 }} elevation={6}>
             <Typography
               sx={{ mb: 4, fontWeight: 500, letterSpacing: 13 }}

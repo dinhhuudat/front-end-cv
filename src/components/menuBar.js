@@ -25,7 +25,7 @@ const MenuBar = () => {
 
   useEffect(() => { 
     experience.current=document.getElementById(scrollVal) 
-    experience.current.scrollIntoView({behavior: "smooth"});
+    experience.current.scrollIntoView({behavior: "smooth" });
   }, [scrollVal]);
 
   function handelScrool(e){ 

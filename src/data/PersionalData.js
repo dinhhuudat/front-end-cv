@@ -8,19 +8,7 @@ export default {
   expertise: [
     { id: 1, position: "C# developer" },
     { id: 2, position: "Front-end developer" },
-  ],
-  skills: [
-    { id: 1, language: "C#", experiance: "2 Year" },
-    { id: 2, language: "Sql-Oracle", experiance: "2 Year" },
-    { id: 3, language: "Html", experiance: "1 Year" },
-    { id: 4, language: "Css", experiance: "1 Year" },
-    { id: 5, language: "Js", experiance: "1 Year" },
-    { id: 6, language: "ReactJs", experiance: "6 Month" },
-    { id: 7, language: "NodeJS", experiance: "6 Month" },
-    { id: 8, language: "Monggo", experiance: "6 Month" },
-    { id: 9, language: "Github", experiance: "6 Month" },
-    { id: 10, language: "Svn", experiance: "1 Year" },
-  ],
+  ], 
   education: [
     {
       id: 1,

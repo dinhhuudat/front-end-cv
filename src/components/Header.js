@@ -12,8 +12,7 @@ const Img = styled('img')({
     maxHeight: '100%',
     borderRadius:'50%', 
   });
- 
-
+  
 function Header(props) {
     return (
     <Paper sx={{p:4, height: '100%', margin: 'auto'  ,backgroundColor:'rgba(0,0,0,0.8)'    ,color: 'white' }}>
@@ -29,7 +28,7 @@ function Header(props) {
         >
        
           <ButtonBase sx={{ width: 128, height: 128 }} >
-            <Img alt="Avatar" src="https://i.ibb.co/7t20CMc/avartar.jpg"/> 
+            <Img alt="Avatar" src="https://i.ibb.co/LJtrvVc/avatar.jpg"/> 
           </ButtonBase>
 
         </Grid>

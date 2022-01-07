@@ -203,10 +203,10 @@ function Body(props) {
 
   //SKILLS
   const Skills = () => {
-    const FrontEnd = ["HTML", "CSS", "JAVASCRIPT", "REACTJS", "JQUERY", "SASS"];
+    const FrontEnd = ["HTML", "CSS", "JAVASCRIPT", "REACTJS", "JQUERY", "SASS","MATERIAL UI"];
     const BackEnd = ["NODEJS", "EXPRESS"];
     const DATABASE = ["MONGODB", "ORACLE-SQL", "SQL-SERVER"];
-    const OTHERSKILLS = ["C#(WINFORM)", "DEVEXPRESS"];
+    const OTHERSKILLS = ["C#(WINFORM)", "DEVEXPRESS","GITHUB"];
     const BLOCKCHAIN = ["SOLIDITY", "ETHERS", "METAMASK"];
 
     const BLOCKCHAINData = BLOCKCHAIN.map((val, index) => (

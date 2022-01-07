@@ -33,7 +33,7 @@ export default {
     {
       id: 2,
       from: "2020",
-      to: "Now",
+      to: "Now : TDS",
       location: "Bien Hoa, Dong Nai",
       desc: [
         "Create front end software language C#(using devexpress)",

@@ -45,9 +45,13 @@ function Header(props) {
               </Typography> 
             </Grid>
 
-            <Grid item> 
-              <Typography align='left' sx={{fontStyle:'italic'}} variant='inherit' gutterBottom>
-              Hello, my name is Dat and I want to become a web Developer. I always challenge myself to become a better version
+            <Grid item>  
+              <Typography align='justify' sx={{fontStyle:'italic'}} variant='inherit' gutterBottom>
+              About me: My name is DAT and I want to become a web developer, now I am working as a c# developer on both of front-end & Back-end sides. After 6 months researched and learning, I think I have enough knowledge to change the environment and reach a higher level with website development.
+                  
+              </Typography> 
+              <Typography align='justify' sx={{fontStyle:'italic'}} variant='inherit' gutterBottom>
+                   For me language is just a tool, people are most important. so if have some language or problem, maybe I am not the first person to find that but I always give you an answer!
               </Typography> 
 
                
